@@ -29,7 +29,7 @@ export class UploadImgComponent implements OnInit {
    * @param event event object which contains file related information.
    */
   onFileChange(event: any) {
-    const apiKey = 'AIzaSyBrda2xrPeYiLbS0Ym3dGJ1bdvHpnKsl6E';
+    const apiKey = 'include the api key here';
     const url = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
     const body: any = {
       requests: [
