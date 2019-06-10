@@ -1,0 +1,11 @@
+<div class="heading style-scope vs-properties ">Dominant Colors</div>
+<ng-container *ngFor="let property of imageProperties">
+  <span class="color-container" 
+        [ngStyle]="{'width': getPercent(property), 'background-color': getColorCode(property.color)}"
+        (mouseover)="hoverColorSection(property)">
+  </span>
+</ng-container>
+<div id="row" class="color-row style-scope vs-properties">
+  <div class="color-text style-scope vs-properties">{{colorValues}}</div><div class="color-percent style-scope vs-properties">{{percentValue}}</div>
+  <div class="color-block style-scope vs-properties" [ngStyle]="{'background-color': colorBlock}"></div>
+</div>

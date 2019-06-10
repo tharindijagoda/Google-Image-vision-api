@@ -1,0 +1,8 @@
+<div>
+  <div class="vs-safe" *ngFor="let safeSearchDataKey of safeSearchDataKeys">
+    <span class="ss-name">{{safeSearchDataKey}}</span>
+    <span class="ss-square-box"></span>
+    <span class="ss-prediction">{{safeSearchData[safeSearchDataKey]}}</span>
+  </div>
+</div>
+<div class="help style-scope vs-safe">Likeliness values are Unknown, Very Unlikely, Unlikely, Possible, Likely, and Very Likely</div>

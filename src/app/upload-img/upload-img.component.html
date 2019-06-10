@@ -1,0 +1,11 @@
+<section class="main-section">
+  <div class="sub-section">
+    <div class="user-message">Try the API</div>
+    <div class="upload-image-section" (click)="tenantPic.click()">
+      <div class="user-intruction">Click here to upload image file</div>
+      <input style="display: none;" #tenantPic id="tenantPicId" type="file" name="tenantPicId" class="hide-style" (change)="onFileChange($event)" />
+      <div class="img-container"></div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,20 @@
+<div>
+  <app-faces *ngIf="tabId === 'tabFaces'"
+    [faceData]="faceData">
+  </app-faces>
+  <app-labels *ngIf="tabId === 'tabLabels'"
+    [labelData]="labelData">
+  </app-labels>
+  <app-web *ngIf="tabId === 'tabWeb'"
+    [webData]="webData">
+  </app-web>
+  <app-properties *ngIf="tabId === 'tabProperties'"
+    [propertiesData]="propertiesData">
+  </app-properties>
+  <app-safe-search *ngIf="tabId === 'tabSafeSearch'"
+    [safeSearchData]="safeSearchData">
+  </app-safe-search>
+  <app-json *ngIf="tabId === 'tabJson'"
+    [jsonData]="data">
+  </app-json>
+</div>

@@ -1,0 +1,30 @@
+.ss-name {
+    display: inline-block;
+    width: 26%;
+    font-size: 1em;
+    position: relative;
+    top: -2px;
+    text-transform: capitalize;
+}
+
+.ss-square-box {
+    width: 15px;
+    height: 15px;
+    background: repeating-linear-gradient(to right, rgb(165, 214, 167), rgb(165, 214, 167) 15px, rgb(255, 255, 255) 15px, rgb(255, 255, 255) 30px);
+    display: inline-block;
+}
+
+.ss-prediction {
+    float: right;
+    font-size: 1em;
+}
+
+.vs-safe {
+    margin: 30px 0;
+}
+
+.help.vs-safe {
+    color: #aaa;
+    font-size: .8em;
+    padding: 30px 20px 0 30px;
+}

@@ -1,0 +1,13 @@
+<div class="row style-scope vs-labels" *ngFor="let label of labelData">
+  <div class="name style-scope vs-labels">
+    <a target="_blank" class="style-scope vs-labels" title="Search for Person on Google" href="https://www.google.com/search?q={{label.description}}">
+    {{label.description | titlecase }}
+    </a>
+  </div>
+  <div class="score style-scope vs-labels">
+    {{getPercentValue(label.score)}}
+  </div>
+  <div class="bar style-scope vs-labels">
+    <div class="meter style-scope vs-labels" [ngStyle]="{'width': getPercentValue(label.score)}"></div>
+  </div>
+</div>

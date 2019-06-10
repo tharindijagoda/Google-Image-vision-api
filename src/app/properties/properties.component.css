@@ -1,0 +1,32 @@
+.color-container {
+    display: inline-block;
+    height: 220px;
+}
+
+.color-text.vs-properties {
+    font-size: .9em;
+    width: 80%;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.color-percent.vs-properties {
+    font-size: 1.1em;
+    width: 18%;
+    text-align: right;
+    display: inline-block;  
+}
+
+.color-block.vs-properties {
+    margin-top: 6px;
+    height: 20px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.heading.vs-properties {
+    color: #333;
+    font-size: 1.3em;
+    padding: 10px 0 15px;
+}

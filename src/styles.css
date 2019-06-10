@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.key {
+    color: #007d00;
+}
+
+.string {
+    color: #a20000;
+}
+
+.number {
+    color: #2558ff;
+}

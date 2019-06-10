@@ -1,0 +1,37 @@
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div id="exit" class="style-scope vs-app" (click)="exit()"></div>
+  <div class="mdl-tabs__tab-bar">
+      <ng-container *ngFor="let tab of tabs; let i = index">
+          <a  href="{{'#' + tab.id}}" class="mdl-tabs__tab" [class.is-active]="i === 0">{{ tab.title }}</a>
+      </ng-container>
+      
+      <!-- <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a> -->
+  </div>
+
+  <ng-container *ngFor="let tab of tabs; let i = index">
+    <div class="mdl-tabs__panel" key="{{tab.id}}" [class.is-active]="i === 0" id="{{tab.id}}">
+      <app-img-info-container
+        [data]="imageReports"
+        [imgName]="imgName"
+        [tabId]="tab.id">
+      </app-img-info-container>
+    </div>
+  </ng-container>
+
+  <!-- <div class="mdl-tabs__panel is-active" id="starks-panel">
+    <app-img-info-container 
+      [imgName]="imgName">
+
+    </app-img-info-container>
+  </div>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+    <app-img-info-container 
+      [imgName]="imgName">
+  </div>
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+    <app-img-info-container 
+      [imgName]="imgName">
+  </div>
+</div> -->

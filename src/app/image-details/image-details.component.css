@@ -1,0 +1,15 @@
+#exit.vs-app {
+    cursor: pointer;
+    font-size: 2.3em;
+    font-weight: bold;
+    line-height: .6em;
+    opacity: .8;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+}
+
+#exit.vs-app::before {
+    content: '\0000D7';
+}

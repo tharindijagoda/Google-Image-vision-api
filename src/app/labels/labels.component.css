@@ -1,0 +1,31 @@
+.row.vs-labels {
+    padding: 8px 0 8px 0;
+}
+
+.name.vs-labels {
+    font-size: 1.2em;
+    width: 85%;
+    display: inline-block;
+}
+
+.score.vs-labels {
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+}
+
+.bar.vs-labels {
+    margin-top: 4px;
+    background-color: #ccc;
+    height: 4px;
+}
+
+.meter.vs-labels {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+a, a:visited, a:hover, a:visited, a:hover {
+    text-decoration: none;
+    color: #1672b6;
+}
